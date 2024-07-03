@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import flamingoImage from "/placeholder.svg"; // Placeholder image
-import flamingoHabitatImage from "/placeholder.svg"; // Placeholder image
-import flamingoDietImage from "/placeholder.svg"; // Placeholder image
+import flamingoHeaderImage from "/images/flamingo-header.jpg";
+import flamingoAboutImage from "/images/flamingo-about.jpg";
+import flamingoHabitatImage from "/images/flamingo-habitat.jpg";
+import flamingoDietImage from "/images/flamingo-diet.jpg";
 
 const Index = () => {
   return (
     <div className="space-y-10">
       {/* Header Section */}
-      <header className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center" style={{ backgroundImage: `url(${flamingoImage})` }}>
+      <header className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center" style={{ backgroundImage: `url(${flamingoHeaderImage})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl font-bold">Discover the World of Flamingos</h1>
@@ -25,7 +26,7 @@ const Index = () => {
             <CardTitle>About Flamingos</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col md:flex-row items-center">
-            <img src={flamingoImage} alt="Flamingo" className="w-full md:w-1/2 rounded-lg" />
+            <img src={flamingoAboutImage} alt="Flamingo" className="w-full md:w-1/2 rounded-lg" />
             <p className="mt-4 md:mt-0 md:ml-6">
               Flamingos are large birds known for their bright pink feathers, long legs, and distinctive downward-bending beaks. They are social animals that live in large colonies and are found in warm, watery regions on many continents.
             </p>
